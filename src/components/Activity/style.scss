@@ -1,0 +1,201 @@
+.InquiryUserTable-warpper {
+
+    .search-warpper {
+        display: flex;
+
+        .ant-select-selector {
+            height: 2.5rem;
+
+            .ant-select-selection-item {
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+
+    .user-table-warpper {
+
+        .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+            background-color: unset;
+            border: none;
+            padding-top: 3px;
+        }
+
+        .ant-pagination-options {
+            display: none;
+        }
+
+        .ant-pagination-item {
+            color: var(--mono-grey-500, #767676);
+            text-align: center;
+
+            /* Body/OS Body 1 */
+            font-family: Open Sans;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.75rem;
+            display: flex;
+            width: 2.25rem;
+            height: 2.25rem;
+            flex-direction: column;
+            justify-content: center;
+            border: none;
+            background: none;
+            /* 175% */
+        }
+
+        .ant-pagination-item-active {
+
+
+            align-items: center;
+            gap: 0.625rem;
+            border-radius: 0.25rem;
+            background: var(--primary-dark-green-600, #48AA15);
+            color: white;
+
+
+            a {
+                color: white;
+            }
+        }
+
+        .ant-table {
+            color: var(--mono-grey-800, #303030) !important;
+            text-overflow: ellipsis !important;
+            /* Body/OS Body 3 */
+            font-family: Open Sans !important;
+            font-size: 0.8125rem !important;
+            font-style: normal !important;
+            font-weight: 400 !important;
+            line-height: 1.25rem !important;
+
+
+
+            .date-item {
+                .day-text {
+                    color: var(--mono-grey-800, #303030);
+                    /* Body/OS Body 3 */
+                    font-family: Open Sans;
+                    font-size: 0.8125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.25rem;
+                    /* 153.846% */
+                }
+
+                .time-text {
+                    color: var(--mono-grey-450, #8C8C8C);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    /* Body/OS Body 4 */
+                    font-family: Open Sans;
+                    font-size: 0.75rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .shop-name-item {
+                .name-text {
+                    color: var(--mono-grey-800, #303030);
+
+                }
+
+                .location-text {
+                    color: var(--primary-dark-green-600, #48AA15);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    font-family: Open Sans;
+                    font-size: 0.75rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-decoration-line: underline;
+                }
+            }
+
+            .ant-table-content {
+                border-color: #C7C7C7;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 0.5rem;
+            }
+
+            .ant-switch-checked {
+                background-color: #BCCE1D;
+            }
+
+            .ant-table-cell>th {
+                white-space: nowrap !important;
+            }
+
+            .ant-table-tbody>tr>td,
+            .ant-table-thead>tr>th {
+                white-space: unset;
+            }
+
+            .img-item-warpper {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-gap: 0.25rem;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 0.25rem;
+                    object-fit: cover;
+                    aspect-ratio: 1 / 1;
+                }
+            }
+        }
+    }
+}
+
+.modal-review-style {
+    .header-text {
+        color: var(--mono-grey-800, #303030);
+
+        /* Heading/OS Head 1 */
+        font-family: Open Sans;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem;
+        /* 160% */
+        letter-spacing: -0.01875rem;
+    }
+}
+
+.InquiryUserTable-main {
+
+    .ant-tabs-tab-btn {
+        color: var(--mono-grey-450, #8C8C8C);
+        /* Heading/OS Head 3 */
+        font-family: Open Sans;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
+        /* 166.667% */
+        letter-spacing: -0.01875rem;
+        text-shadow: none
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: var(--primary-dark-green-600, #48AA15);
+        /* Heading/OS Head 3 */
+        font-family: Open Sans;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
+        /* 166.667% */
+        letter-spacing: -0.01875rem;
+        text-shadow: none
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active {
+        border-bottom: 2px solid #48AA15 !important;
+        z-index: 2;
+    }
+}

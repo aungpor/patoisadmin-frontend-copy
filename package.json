@@ -1,0 +1,101 @@
+{
+  "name": "patois-admin-front",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@azure/msal-browser": "^2.30.0",
+    "@azure/msal-react": "^1.4.9",
+    "@ckeditor/ckeditor5-alignment": "^38.0.1",
+    "@ckeditor/ckeditor5-autoformat": "^38.0.1",
+    "@ckeditor/ckeditor5-autosave": "^38.0.1",
+    "@ckeditor/ckeditor5-basic-styles": "^38.0.1",
+    "@ckeditor/ckeditor5-block-quote": "^38.0.1",
+    "@ckeditor/ckeditor5-build-classic": "^27.1.0",
+    "@ckeditor/ckeditor5-cloud-services": "^38.0.1",
+    "@ckeditor/ckeditor5-core": "^38.0.1",
+    "@ckeditor/ckeditor5-editor-classic": "^38.0.1",
+    "@ckeditor/ckeditor5-essentials": "^38.0.1",
+    "@ckeditor/ckeditor5-font": "^38.0.1",
+    "@ckeditor/ckeditor5-heading": "^38.0.1",
+    "@ckeditor/ckeditor5-image": "^38.0.1",
+    "@ckeditor/ckeditor5-indent": "^38.0.1",
+    "@ckeditor/ckeditor5-link": "^38.0.1",
+    "@ckeditor/ckeditor5-list": "^38.0.1",
+    "@ckeditor/ckeditor5-media-embed": "^38.0.1",
+    "@ckeditor/ckeditor5-paragraph": "^38.0.1",
+    "@ckeditor/ckeditor5-paste-from-office": "^38.0.1",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@ckeditor/ckeditor5-remove-format": "^38.0.1",
+    "@ckeditor/ckeditor5-source-editing": "^38.0.1",
+    "@ckeditor/ckeditor5-special-characters": "^38.0.1",
+    "@ckeditor/ckeditor5-table": "^38.0.1",
+    "@ckeditor/ckeditor5-typing": "^38.0.1",
+    "@ckeditor/ckeditor5-ui": "^38.0.1",
+    "@ckeditor/ckeditor5-upload": "^38.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.16.6",
+    "antd-button-color": "^1.0.4",
+    "apexcharts": "^3.27.1",
+    "array-move": "^4.0.0",
+    "axios": "^1.1.2",
+    "ckeditor5-custom-build": "file:ckeditor5-custom",
+    "crypto-js": "^4.1.1",
+    "env-cmd": "^10.1.0",
+    "file-saver": "^2.0.5",
+    "install": "^0.13.0",
+    "jszip": "^3.10.1",
+    "moment": "^2.29.4",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-sortable-hoc": "^2.0.0",
+    "react-tag-autocomplete": "^6.3.0",
+    "react-tag-input": "^6.8.1",
+    "react-use-clipboard": "^1.0.9",
+    "sass": "^1.63.2",
+    "styled-components": "^5.3.0",
+    "use-debounce": "^9.0.4",
+    "web-vitals": "^1.1.2",
+    "webpack": "^4.44.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "docker:build-prd": "docker build -t prd4maxventurecontainerregistry.azurecr.io/prd-front-patois-admin:v14 .",
+    "docker:build-mac-prd": "docker buildx build --platform linux/amd64 -t prd4maxventurecontainerregistry.azurecr.io/prd-front-patois-admin:v14 . ",
+    "docker:push-prd": "docker push prd4maxventurecontainerregistry.azurecr.io/prd-front-patois-admin:v14",
+    "docker:build-uat": "docker build -t prd4maxventurecontainerregistry.azurecr.io/uat-front-patois-admin:v15 .",
+    "docker:build-mac-uat": "docker buildx build --platform linux/amd64 -t prd4maxventurecontainerregistry.azurecr.io/uat-front-patois-admin:v16 .",
+    "docker:push-uat": "docker push prd4maxventurecontainerregistry.azurecr.io/uat-front-patois-admin:v15",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-alignment": "^38.0.1",
+    "http-proxy-middleware": "^2.0.6",
+    "install": "^0.13.0",
+    "npm": "^9.7.1"
+  }
+}

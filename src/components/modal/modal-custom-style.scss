@@ -1,0 +1,45 @@
+.modal-popup-warpper {
+    // display: grid !important;
+    width: auto !important;
+
+    .close-bt-warpper {
+        margin-top: 1.25rem;
+        margin-left: 2.25rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            background: white;
+            width: 35px;
+            height: 35px;
+            bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .body-modal {
+        background: #F9F9F9;
+        width: auto;
+        border-radius: 5rem;
+        overflow: hidden;
+
+        div {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .ant-modal-content {
+        background: none;
+        box-shadow: none;
+    }
+
+    .ant-input-group {
+        background: white;
+    }
+}
